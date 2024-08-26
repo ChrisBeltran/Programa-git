@@ -1,0 +1,99 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex e69de29..08f6571 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,71 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Study Schedule</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="styles.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m        <h1>Study Schedule</h1>[m
+[32m+[m[32m        <table id="schedule">[m
+[32m+[m[32m            <thead>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <th>Time</th>[m
+[32m+[m[32m                    <th>Activity</th>[m
+[32m+[m[32m                    <th>Description</th>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m            </thead>[m
+[32m+[m[32m            <tbody>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>3:00 a.m. - 6:00 a.m.</td>[m
+[32m+[m[32m                    <td>Fundamentos de Programación</td>[m
+[32m+[m[32m                    <td>Aprender nuevos conceptos, resolver ejercicios prácticos.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>6:00 a.m. - 6:30 a.m.</td>[m
+[32m+[m[32m                    <td>Inglés</td>[m
+[32m+[m[32m                    <td>Lectura, gramática, vocabulario o práctica escrita.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>6:30 a.m. - 9:00 a.m.</td>[m
+[32m+[m[32m                    <td>Actividades de la Universidad</td>[m
+[32m+[m[32m                    <td>Tareas académicas prioritarias o estudios.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>9:00 a.m. - 9:30 a.m.</td>[m
+[32m+[m[32m                    <td>Inglés</td>[m
+[32m+[m[32m                    <td>Práctica de conversación o escucha (podcasts, videos).</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>9:30 a.m. - 11:30 a.m.</td>[m
+[32m+[m[32m                    <td>Actividades de la Universidad</td>[m
+[32m+[m[32m                    <td>Continuar con las tareas académicas o proyectos.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>11:30 a.m. - 12:00 p.m.</td>[m
+[32m+[m[32m                    <td>Inglés</td>[m
+[32m+[m[32m                    <td>Ejercicios de escritura, repaso de lo aprendido.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>12:00 p.m. - 5:00 p.m.</td>[m
+[32m+[m[32m                    <td>Trabajos Pendientes</td>[m
+[32m+[m[32m                    <td>Realización de trabajos o proyectos acumulados.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>5:00 p.m. - 8:00 p.m.</td>[m
+[32m+[m[32m                    <td>Fundamentos de Programación</td>[m
+[32m+[m[32m                    <td>Revisión, práctica y proyectos pequeños.</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>8:00 p.m. - 8:30 p.m.</td>[m
+[32m+[m[32m                    <td>Inglés</td>[m
+[32m+[m[32m                    <td>Lectura ligera o actividades relajadas en inglés (series, juegos).</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m            </tbody>[m
+[32m+[m[32m        </table>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <script src="script.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/kotlin.txt b/kotlin.txt[m
+[1mdeleted file mode 100644[m
+[1mindex 45d3612..0000000[m
+[1m--- a/kotlin.txt[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-ChrisBeltran / chrisbeltran098@gmail.com[m
+\ No newline at end of file[m
+[1mdiff --git a/script.js b/script.js[m
+[1mindex e69de29..7282493 100644[m
+[1m--- a/script.js[m
+[1m+++ b/script.js[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32mconst rows = document.querySelectorAll('#schedule tbody tr');[m
+[32m+[m
+[32m+[m[32mrows.forEach(row => {[m
+[32m+[m[32m    row.addEventListener('click', () => {[m
+[32m+[m[32m        alert(`Selected Activity: ${row.cells[1].innerText}\nDescription: ${row.cells[2].innerText}`);[m
+[32m+[m[32m    });[m
+[32m+[m[32m});[m
+[1mdiff --git a/style.css b/style.css[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
